@@ -1,0 +1,19 @@
+@mixin align-content {
+    
+    $values: center, flex-end, flex-start, space-around, space-between, stretch;
+    // @debug $values;
+
+    @for $i from 1 through length($values) {
+        .align-content-#{$i} {
+        
+            align-content: nth($values, $i);
+
+        }
+    }
+
+}
+
+
+@at-root {
+    @include align-content;
+}

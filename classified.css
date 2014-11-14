@@ -1,0 +1,19 @@
+.align-content-1 {
+  align-content: center; }
+
+.align-content-2 {
+  align-content: flex-end; }
+
+.align-content-3 {
+  align-content: flex-start; }
+
+.align-content-4 {
+  align-content: space-around; }
+
+.align-content-5 {
+  align-content: space-between; }
+
+.align-content-6 {
+  align-content: stretch; }
+
+/*# sourceMappingURL=classified.css.map */
