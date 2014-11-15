@@ -4,16 +4,75 @@
     // @debug $values;
 
     @for $i from 1 through length($values) {
-        .align-content-#{$i} {
+        .align-content-#{nth($values, $i)} {
         
             align-content: nth($values, $i);
 
         }
+
     }
 
 }
 
 
+
+@mixin align-items {
+    
+    $values: baseline, center, flex-end, flex-start, stretch;
+
+    @for $i from 1 through length($values) {
+        .align-items-#{nth($values, $i)} {
+            
+           align-items: nth($values, $i); 
+
+        }    
+
+    }
+
+}
+
+
+@mixin align-self {
+    
+    $values: auto, baseline, center, flex-end, flex-start, stretch;
+
+    @for $i from 1 through length($values) {
+        .align-items-#{nth($values, $i)} {
+            
+           align-self: nth($values, $i); 
+
+        }    
+
+    }
+
+}
+
+
+@mixin backface-visibility {
+    
+    $values: hidden, visible;
+
+    @for $i from 1 through length($values) {
+
+        .backface-visibility-#{nth($values, $i)} {
+            
+            backface-visibility: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+
+
+
+
 @at-root {
     @include align-content;
+    @include align-items;
+    @include align-self;
+    @include backface-visibility;
 }
+
+

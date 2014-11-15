@@ -1,19 +1,58 @@
-.align-content-1 {
+.align-content-center {
   align-content: center; }
 
-.align-content-2 {
+.align-content-flex-end {
   align-content: flex-end; }
 
-.align-content-3 {
+.align-content-flex-start {
   align-content: flex-start; }
 
-.align-content-4 {
+.align-content-space-around {
   align-content: space-around; }
 
-.align-content-5 {
+.align-content-space-between {
   align-content: space-between; }
 
-.align-content-6 {
+.align-content-stretch {
   align-content: stretch; }
+
+.align-items-baseline {
+  align-items: baseline; }
+
+.align-items-center {
+  align-items: center; }
+
+.align-items-flex-end {
+  align-items: flex-end; }
+
+.align-items-flex-start {
+  align-items: flex-start; }
+
+.align-items-stretch {
+  align-items: stretch; }
+
+.align-items-auto {
+  align-self: auto; }
+
+.align-items-baseline {
+  align-self: baseline; }
+
+.align-items-center {
+  align-self: center; }
+
+.align-items-flex-end {
+  align-self: flex-end; }
+
+.align-items-flex-start {
+  align-self: flex-start; }
+
+.align-items-stretch {
+  align-self: stretch; }
+
+.backface-visibility-hidden {
+  backface-visibility: hidden; }
+
+.backface-visibility-visible {
+  backface-visibility: visible; }
 
 /*# sourceMappingURL=classified.css.map */
