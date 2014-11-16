@@ -1,3 +1,5 @@
+// A ====================================
+// TODO :active, all 
 @mixin align-content {
     
     $values: center, flex-end, flex-start, space-around, space-between, stretch;
@@ -47,7 +49,9 @@
 
 }
 
-
+// B ====================================
+// TODO  background-*, border-color, border-radius, bottom, box-decoration-break, box-shadow,
+// box-sizing, break-after, break-before, break-inside
 @mixin backface-visibility {
     
     $values: hidden, visible;
@@ -64,6 +68,219 @@
 
 }
 
+@mixin border-width {
+    
+    $values: thin, medium, thick, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-width-#{nth($values, $i)} {
+            
+            border-width: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-top-width {
+    
+    $values: thin, medium, thick, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-top-width-#{nth($values, $i)} {
+            
+            border-top-width: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-right-width {
+    
+    $values: thin, medium, thick, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-right-width-#{nth($values, $i)} {
+            
+            border-right-width: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+
+@mixin border-bottom-width {
+    
+    $values: thin, medium, thick, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-bottom-width-#{nth($values, $i)} {
+            
+            border-bottom-width: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-left-width {
+    
+    $values: thin, medium, thick, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-left-width-#{nth($values, $i)} {
+            
+            border-left-width: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-style-#{nth($values, $i)} {
+            
+            border-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-style-#{nth($values, $i)} {
+            
+            border-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-top-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-top-style-#{nth($values, $i)} {
+            
+            border-top-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-right-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-right-style-#{nth($values, $i)} {
+            
+            border-right-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-bottom-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-bottom-style-#{nth($values, $i)} {
+            
+            border-bottom-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-left-style {
+    
+    $values: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .border-left-style-#{nth($values, $i)} {
+            
+            border-bottom-style: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin border-collapse { 
+    
+    $values: inherit, collapse, separate;
+
+    @for $i from 1 through length($values) {
+
+        .border-collapse-#{nth($values, $i)} {
+            
+            border-collapse: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+@mixin box-sizing { 
+    
+    $values: content-box, padding-box, border-box, inherit;
+
+    @for $i from 1 through length($values) {
+
+        .box-sizing-#{nth($values, $i)} {
+            
+            box-sizing: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -72,7 +289,24 @@
     @include align-content;
     @include align-items;
     @include align-self;
+
     @include backface-visibility;
+
+    @include border-width;
+    @include border-top-width;
+    @include border-right-width;
+    @include border-bottom-width;
+    @include border-left-width;
+
+    @include border-style;
+    @include border-top-style;
+    @include border-right-style;
+    @include border-bottom-style;
+    @include border-left-style;
+
+    @include border-collapse;
+
+    @include box-sizing;
 }
 
 

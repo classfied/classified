@@ -55,4 +55,250 @@
 .backface-visibility-visible {
   backface-visibility: visible; }
 
+.border-width-thin {
+  border-width: thin; }
+
+.border-width-medium {
+  border-width: medium; }
+
+.border-width-thick {
+  border-width: thick; }
+
+.border-width-inherit {
+  border-width: inherit; }
+
+.border-top-width-thin {
+  border-top-width: thin; }
+
+.border-top-width-medium {
+  border-top-width: medium; }
+
+.border-top-width-thick {
+  border-top-width: thick; }
+
+.border-top-width-inherit {
+  border-top-width: inherit; }
+
+.border-right-width-thin {
+  border-right-width: thin; }
+
+.border-right-width-medium {
+  border-right-width: medium; }
+
+.border-right-width-thick {
+  border-right-width: thick; }
+
+.border-right-width-inherit {
+  border-right-width: inherit; }
+
+.border-bottom-width-thin {
+  border-bottom-width: thin; }
+
+.border-bottom-width-medium {
+  border-bottom-width: medium; }
+
+.border-bottom-width-thick {
+  border-bottom-width: thick; }
+
+.border-bottom-width-inherit {
+  border-bottom-width: inherit; }
+
+.border-left-width-thin {
+  border-left-width: thin; }
+
+.border-left-width-medium {
+  border-left-width: medium; }
+
+.border-left-width-thick {
+  border-left-width: thick; }
+
+.border-left-width-inherit {
+  border-left-width: inherit; }
+
+.border-style-dashed {
+  border-style: dashed; }
+
+.border-style-dotted {
+  border-style: dotted; }
+
+.border-style-double {
+  border-style: double; }
+
+.border-style-groove {
+  border-style: groove; }
+
+.border-style-hidden {
+  border-style: hidden; }
+
+.border-style-inset {
+  border-style: inset; }
+
+.border-style-none {
+  border-style: none; }
+
+.border-style-outset {
+  border-style: outset; }
+
+.border-style-ridge {
+  border-style: ridge; }
+
+.border-style-solid {
+  border-style: solid; }
+
+.border-style-inherit {
+  border-style: inherit; }
+
+.border-top-style-dashed {
+  border-top-style: dashed; }
+
+.border-top-style-dotted {
+  border-top-style: dotted; }
+
+.border-top-style-double {
+  border-top-style: double; }
+
+.border-top-style-groove {
+  border-top-style: groove; }
+
+.border-top-style-hidden {
+  border-top-style: hidden; }
+
+.border-top-style-inset {
+  border-top-style: inset; }
+
+.border-top-style-none {
+  border-top-style: none; }
+
+.border-top-style-outset {
+  border-top-style: outset; }
+
+.border-top-style-ridge {
+  border-top-style: ridge; }
+
+.border-top-style-solid {
+  border-top-style: solid; }
+
+.border-top-style-inherit {
+  border-top-style: inherit; }
+
+.border-right-style-dashed {
+  border-right-style: dashed; }
+
+.border-right-style-dotted {
+  border-right-style: dotted; }
+
+.border-right-style-double {
+  border-right-style: double; }
+
+.border-right-style-groove {
+  border-right-style: groove; }
+
+.border-right-style-hidden {
+  border-right-style: hidden; }
+
+.border-right-style-inset {
+  border-right-style: inset; }
+
+.border-right-style-none {
+  border-right-style: none; }
+
+.border-right-style-outset {
+  border-right-style: outset; }
+
+.border-right-style-ridge {
+  border-right-style: ridge; }
+
+.border-right-style-solid {
+  border-right-style: solid; }
+
+.border-right-style-inherit {
+  border-right-style: inherit; }
+
+.border-bottom-style-dashed {
+  border-bottom-style: dashed; }
+
+.border-bottom-style-dotted {
+  border-bottom-style: dotted; }
+
+.border-bottom-style-double {
+  border-bottom-style: double; }
+
+.border-bottom-style-groove {
+  border-bottom-style: groove; }
+
+.border-bottom-style-hidden {
+  border-bottom-style: hidden; }
+
+.border-bottom-style-inset {
+  border-bottom-style: inset; }
+
+.border-bottom-style-none {
+  border-bottom-style: none; }
+
+.border-bottom-style-outset {
+  border-bottom-style: outset; }
+
+.border-bottom-style-ridge {
+  border-bottom-style: ridge; }
+
+.border-bottom-style-solid {
+  border-bottom-style: solid; }
+
+.border-bottom-style-inherit {
+  border-bottom-style: inherit; }
+
+.border-left-style-dashed {
+  border-bottom-style: dashed; }
+
+.border-left-style-dotted {
+  border-bottom-style: dotted; }
+
+.border-left-style-double {
+  border-bottom-style: double; }
+
+.border-left-style-groove {
+  border-bottom-style: groove; }
+
+.border-left-style-hidden {
+  border-bottom-style: hidden; }
+
+.border-left-style-inset {
+  border-bottom-style: inset; }
+
+.border-left-style-none {
+  border-bottom-style: none; }
+
+.border-left-style-outset {
+  border-bottom-style: outset; }
+
+.border-left-style-ridge {
+  border-bottom-style: ridge; }
+
+.border-left-style-solid {
+  border-bottom-style: solid; }
+
+.border-left-style-inherit {
+  border-bottom-style: inherit; }
+
+.border-collapse-inherit {
+  border-collapse: inherit; }
+
+.border-collapse-collapse {
+  border-collapse: collapse; }
+
+.border-collapse-separate {
+  border-collapse: separate; }
+
+.box-sizing-content-box {
+  box-sizing: content-box; }
+
+.box-sizing-padding-box {
+  box-sizing: padding-box; }
+
+.box-sizing-border-box {
+  box-sizing: border-box; }
+
+.box-sizing-inherit {
+  box-sizing: inherit; }
+
 /*# sourceMappingURL=classified.css.map */
