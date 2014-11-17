@@ -50,8 +50,8 @@
 }
 
 // B ====================================
-// TODO  background-*, border-color, border-radius, bottom, box-decoration-break, box-shadow,
-// box-sizing, break-after, break-before, break-inside
+// TODO  background-*, border-color, border-radius, box-decoration-break, box-shadow,
+// break-after, break-before, break-inside
 @mixin backface-visibility {
     
     $values: hidden, visible;
@@ -277,9 +277,102 @@
 
 }
 
+// C ====================================
+// TODO color, columns-*
+
+@mixin caption-side {
+    
+   $values: top, bottom, inherit; 
+
+   @for $i from 1 through length($values) {
+   
+        .caption-side-#{nth($values, $i)} {
+        
+            caption-side: nth($values, $i); 
+
+        }
+
+   }
+
+}
 
 
+@mixin clear { 
+    
+    $values: both, left, none, right, inherit;
 
+    @for $i from 1 through length($values) {
+
+        .clear-#{nth($values, $i)} {
+            
+            clear: nth($values, $i);         
+            
+        }
+
+    }
+
+}
+
+// D ==================================
+// TODO
+
+@mixin direction {
+
+    $values: ltr, rtl, inherit;
+
+    @for $i from 1 through length($values) {
+    
+        .direction-#{nth($values, $i)} {
+        
+            direction: nth($values, $i);
+
+        }
+
+    }
+
+}
+
+@mixin display {
+
+    $values: none, inline, block, list-item, inline-block, inline-table, table, table-cell,
+            table-column, table-column-group, table-footer-group, table-header-group, table-row,
+            table-row-group, flex, inline-flex, grid, inline-grid, ruby, ruby-base, ruby-text,
+            ruby-base-container, ruby-text-container, run-in, inherit, initial, unset;
+
+    @for $i from 1 through length($values) {
+    
+        .display-#{nth($values, $i)} {
+        
+            display: nth($values, $i);
+
+        }
+
+    }
+
+}
+
+// E ====================================
+// TODO
+
+
+// F ====================================
+// TODO filter, flex*, font-*
+
+@mixin float {
+
+    $values: left, right, none, inherit;
+
+    @for $i from 1 through length($values) {
+    
+        .float-#{nth($values, $i)} {
+        
+            float: nth($values, $i);
+        
+        } 
+    
+    }
+
+}
 
 
 
@@ -307,6 +400,16 @@
     @include border-collapse;
 
     @include box-sizing;
+
+    @include clear;
+
+    @include caption-side;
+
+    @include direction;
+
+    @include display;
+
+    @include float;
 }
 
 
