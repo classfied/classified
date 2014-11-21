@@ -1,0 +1,232 @@
+
+.borders(@border) when (@border =< @border-max){
+	.b-@{border} ,
+	.border-@{border} {
+		border: ~'@{border}@{border-unit}' ;
+	}
+	.borders((@border + @border-step))
+}
+
+.border-bottoms(@border) when (@border =< @border-max){
+	.bb-@{border} ,
+	.border-bottom-@{border} {
+		border-bottom: ~'@{border}@{border-unit}' ;
+	}
+	.border-bottoms((@border + @border-step))
+}
+
+.border-bottom-widths(@border) when (@border =< @border-max){
+	.bbw-@{border} ,
+	.border-bottom-width-@{border} {
+		border-bottom-width: ~'@{border}@{border-unit}' ;
+	}
+	.border-bottom-widths((@border + @border-step))
+}
+
+.border-left-widths(@border) when (@border =< @border-max){
+	.blw-@{border} ,
+	.border-left-width-@{border} {
+		border-left-width: ~'@{border}@{border-unit}' ;
+	}
+	.border-left-widths((@border + @border-step))
+}
+
+.border-radiuss(@border-radius) when (@border-radius =< @border-radius-max){
+	.br-@{border-radius} ,
+	.border-radius-@{border-radius} {
+		border-radius: ~'@{border-radius}@{border-radius-unit}' ;
+	}
+	.border-radiuss((@border-radius + @border-radius-step))
+}
+
+.border-right-widths(@border) when (@border =< @border-max){
+	.brw-@{border} ,
+	.border-right-width-@{border} {
+		border-right-width: ~'@{border}@{border-unit}' ;
+	}
+	.border-right-widths((@border + @border-step))
+}
+
+.border-top-widths(@border) when (@border =< @border-max){
+	.btw-@{border} ,
+	.border-top-width-@{border} {
+		border-top-width: ~'@{border}@{border-unit}' ;
+	}
+	.border-top-widths((@border + @border-step))
+}
+
+.bottoms(@position) when (@position =< @position-max){
+	.b-@{position} ,
+	.bottom-@{position} {
+		bottom: ~'@{position}@{position-unit}' ;
+	}
+	.bottoms((@position + @position-step))
+}
+
+.font-sizes(@font) when (@font =< @font-max){
+	.fs-@{font} ,
+	.font-size-@{font} {
+		font-size: ~'@{font}@{font-unit}' ;
+	}
+	.font-sizes((@font + @font-step))
+}
+
+.heights(@dimension) when (@dimension =< @dimension-max){
+	.h-@{dimension} ,
+	.height-@{dimension} {
+		height: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.heights((@dimension + @dimension-step))
+}
+
+.lefts(@position) when (@position =< @position-max){
+	.l-@{position} ,
+	.left-@{position} {
+		left: ~'@{position}@{position-unit}' ;
+	}
+	.lefts((@position + @position-step))
+}
+
+.margins(@margin) when (@margin =< @margin-max){
+	.m-@{margin} ,
+	.margin-@{margin} {
+		margin: ~'@{margin}@{margin-unit}' ;
+	}
+	.margins((@margin + @margin-step))
+}
+
+.margin-bottoms(@margin) when (@margin =< @margin-max){
+	.mb-@{margin} ,
+	.margin-bottom-@{margin} {
+		margin-bottom: ~'@{margin}@{margin-unit}' ;
+	}
+	.margin-bottoms((@margin + @margin-step))
+}
+
+.margin-lefts(@margin) when (@margin =< @margin-max){
+	.ml-@{margin} ,
+	.margin-left-@{margin} {
+		margin-left: ~'@{margin}@{margin-unit}' ;
+	}
+	.margin-lefts((@margin + @margin-step))
+}
+
+.margin-rights(@margin) when (@margin =< @margin-max){
+	.mr-@{margin} ,
+	.margin-right-@{margin} {
+		margin-right: ~'@{margin}@{margin-unit}' ;
+	}
+	.margin-rights((@margin + @margin-step))
+}
+
+.margin-tops(@margin) when (@margin =< @margin-max){
+	.mt-@{margin} ,
+	.margin-top-@{margin} {
+		margin-top: ~'@{margin}@{margin-unit}' ;
+	}
+	.margin-tops((@margin + @margin-step))
+}
+
+.max-heights(@dimension) when (@dimension =< @dimension-max){
+	.mh-@{dimension} ,
+	.max-height-@{dimension} {
+		max-height: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.max-heights((@dimension + @dimension-step))
+}
+
+.max-widths(@dimension) when (@dimension =< @dimension-max){
+	.mw-@{dimension} ,
+	.max-width-@{dimension} {
+		max-width: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.max-widths((@dimension + @dimension-step))
+}
+
+.min-heights(@dimension) when (@dimension =< @dimension-max){
+	.mh-@{dimension} ,
+	.min-height-@{dimension} {
+		min-height: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.min-heights((@dimension + @dimension-step))
+}
+
+.min-widths(@dimension) when (@dimension =< @dimension-max){
+	.mw-@{dimension} ,
+	.min-width-@{dimension} {
+		min-width: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.min-widths((@dimension + @dimension-step))
+}
+
+.paddings(@padding) when (@padding =< @padding-max){
+	.p-@{padding} ,
+	.padding-@{padding} {
+		padding: ~'@{padding}@{padding-unit}' ;
+	}
+	.paddings((@padding + @padding-step))
+}
+
+.padding-bottoms(@padding) when (@padding =< @padding-max){
+	.pb-@{padding} ,
+	.padding-bottom-@{padding} {
+		padding-bottom: ~'@{padding}@{padding-unit}' ;
+	}
+	.padding-bottoms((@padding + @padding-step))
+}
+
+.padding-lefts(@padding) when (@padding =< @padding-max){
+	.pl-@{padding} ,
+	.padding-left-@{padding} {
+		padding-left: ~'@{padding}@{padding-unit}' ;
+	}
+	.padding-lefts((@padding + @padding-step))
+}
+
+.padding-rights(@padding) when (@padding =< @padding-max){
+	.pr-@{padding} ,
+	.padding-right-@{padding} {
+		padding-right: ~'@{padding}@{padding-unit}' ;
+	}
+	.padding-rights((@padding + @padding-step))
+}
+
+.padding-tops(@padding) when (@padding =< @padding-max){
+	.pt-@{padding} ,
+	.padding-top-@{padding} {
+		padding-top: ~'@{padding}@{padding-unit}' ;
+	}
+	.padding-tops((@padding + @padding-step))
+}
+
+.rights(@position) when (@position =< @position-max){
+	.r-@{position} ,
+	.right-@{position} {
+		right: ~'@{position}@{position-unit}' ;
+	}
+	.rights((@position + @position-step))
+}
+
+.tops(@position) when (@position =< @position-max){
+	.t-@{position} ,
+	.top-@{position} {
+		top: ~'@{position}@{position-unit}' ;
+	}
+	.tops((@position + @position-step))
+}
+
+.widths(@dimension) when (@dimension =< @dimension-max){
+	.w-@{dimension} ,
+	.width-@{dimension} {
+		width: ~'@{dimension}@{dimension-unit}' ;
+	}
+	.widths((@dimension + @dimension-step))
+}
+
+.z-indexs(@z-index) when (@z-index =< @z-index-max){
+	.zi-@{z-index} ,
+	.z-index-@{z-index} {
+		z-index: ~'@{z-index}@{z-index-unit}' ;
+	}
+	.z-indexs((@z-index + @z-index-step))
+}
