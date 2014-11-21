@@ -1,0 +1,15 @@
+{
+  "name": "classified",
+  "version": "1.0.0",
+  "description": "Moduler css framwork",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:noders/classit.git"
+  },
+  "author": "waleed qadi",
+  "license": "ISC"
+}
