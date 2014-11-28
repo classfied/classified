@@ -36,6 +36,7 @@ var classified = {
       for(var k in this.varssuffix){
         suffix = this.varssuffix[k];
         sassVars += "$" + varName + "-" + k + ":" + suffix + ";\r\n";
+        sassVars += "$" + varName + "-" + k + "-original:" + suffix + ";\r\n";
       }
       sassVars += "\r\n";
     }
@@ -48,7 +49,7 @@ var classified = {
 
     this.saveFile(sass, "classified.scss");
     this.saveFile(sassVars, "variables.scss");
-    // this.saveFile(loopedProps, "increments.scss");
+    this.saveFile(loopedProps, "increments.scss");
     // this.saveFile(loopedPropsData + props, "properties.scss");
     this.saveFile(props, "properties.scss");
 
@@ -61,13 +62,13 @@ var classified = {
       if(prop.counter){
         classified.sassVars[prop.counter] = prop.counter;
         classified.loops.push({counter:prop.counter, name:propName})
-        sass += "\r\n." + propName + "s(@" + prop.counter + ") when (@" + prop.counter + " =< @" + prop.counter + "-max){\r\n";
-        sass += "\t." + this.shortHand(propName) + "-@{" + prop.counter + "} ,\r\n"
-        sass += "\t." + propName + "-@{" + prop.counter + "} {\r\n"
-        sass += "\t\t" + propName + ": ~'@{"+ prop.counter + "}@{" + prop.counter + "-unit}' ;\r\n";
-        sass += "\t}\r\n";
-        sass += "\t." + propName + "s((@" + prop.counter + " + @" + prop.counter + "-step))\r\n"
+        // sass += "\r\n$original-min: $" + prop.counter + "-min;";
+        sass += "\r\n@while $" + prop.counter + "-min <= $" + prop.counter + "-max {\r\n";        
+        sass += "\t." + this.shortHand(propName) + "-#{$" + prop.counter + "-min} ,\r\n";
+        sass += "\t." + propName + "-#{$" + prop.counter + "-min} { " + propName + ": $" + prop.counter + "-min#{$" + prop.counter + "-unit}; } \r\n";
+        sass += "\t$" + prop.counter + "-min: $" + prop.counter + "-min + $" + prop.counter + "-step;\r\n";
         sass += "}\r\n";
+        sass += "$" + prop.counter + "-min: $" + prop.counter + "-min-original ;\r\n";
       }
     }
     return sass;

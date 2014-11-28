@@ -1,0 +1,203 @@
+
+@while $border-min <= $border-max {
+	.b-#{$border-min} ,
+	.border-#{$border-min} { border: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $border-min <= $border-max {
+	.bb-#{$border-min} ,
+	.border-bottom-#{$border-min} { border-bottom: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $border-min <= $border-max {
+	.bbw-#{$border-min} ,
+	.border-bottom-width-#{$border-min} { border-bottom-width: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $border-min <= $border-max {
+	.blw-#{$border-min} ,
+	.border-left-width-#{$border-min} { border-left-width: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $border-radius-min <= $border-radius-max {
+	.br-#{$border-radius-min} ,
+	.border-radius-#{$border-radius-min} { border-radius: $border-radius-min#{$border-radius-unit}; } 
+	$border-radius-min: $border-radius-min + $border-radius-step;
+}
+$border-radius-min: $border-radius-min-original ;
+
+@while $border-min <= $border-max {
+	.brw-#{$border-min} ,
+	.border-right-width-#{$border-min} { border-right-width: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $border-min <= $border-max {
+	.btw-#{$border-min} ,
+	.border-top-width-#{$border-min} { border-top-width: $border-min#{$border-unit}; } 
+	$border-min: $border-min + $border-step;
+}
+$border-min: $border-min-original ;
+
+@while $position-min <= $position-max {
+	.b-#{$position-min} ,
+	.bottom-#{$position-min} { bottom: $position-min#{$position-unit}; } 
+	$position-min: $position-min + $position-step;
+}
+$position-min: $position-min-original ;
+
+@while $font-min <= $font-max {
+	.fs-#{$font-min} ,
+	.font-size-#{$font-min} { font-size: $font-min#{$font-unit}; } 
+	$font-min: $font-min + $font-step;
+}
+$font-min: $font-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.h-#{$dimension-min} ,
+	.height-#{$dimension-min} { height: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $position-min <= $position-max {
+	.l-#{$position-min} ,
+	.left-#{$position-min} { left: $position-min#{$position-unit}; } 
+	$position-min: $position-min + $position-step;
+}
+$position-min: $position-min-original ;
+
+@while $margin-min <= $margin-max {
+	.m-#{$margin-min} ,
+	.margin-#{$margin-min} { margin: $margin-min#{$margin-unit}; } 
+	$margin-min: $margin-min + $margin-step;
+}
+$margin-min: $margin-min-original ;
+
+@while $margin-min <= $margin-max {
+	.mb-#{$margin-min} ,
+	.margin-bottom-#{$margin-min} { margin-bottom: $margin-min#{$margin-unit}; } 
+	$margin-min: $margin-min + $margin-step;
+}
+$margin-min: $margin-min-original ;
+
+@while $margin-min <= $margin-max {
+	.ml-#{$margin-min} ,
+	.margin-left-#{$margin-min} { margin-left: $margin-min#{$margin-unit}; } 
+	$margin-min: $margin-min + $margin-step;
+}
+$margin-min: $margin-min-original ;
+
+@while $margin-min <= $margin-max {
+	.mr-#{$margin-min} ,
+	.margin-right-#{$margin-min} { margin-right: $margin-min#{$margin-unit}; } 
+	$margin-min: $margin-min + $margin-step;
+}
+$margin-min: $margin-min-original ;
+
+@while $margin-min <= $margin-max {
+	.mt-#{$margin-min} ,
+	.margin-top-#{$margin-min} { margin-top: $margin-min#{$margin-unit}; } 
+	$margin-min: $margin-min + $margin-step;
+}
+$margin-min: $margin-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.mh-#{$dimension-min} ,
+	.max-height-#{$dimension-min} { max-height: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.mw-#{$dimension-min} ,
+	.max-width-#{$dimension-min} { max-width: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.mh-#{$dimension-min} ,
+	.min-height-#{$dimension-min} { min-height: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.mw-#{$dimension-min} ,
+	.min-width-#{$dimension-min} { min-width: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $padding-min <= $padding-max {
+	.p-#{$padding-min} ,
+	.padding-#{$padding-min} { padding: $padding-min#{$padding-unit}; } 
+	$padding-min: $padding-min + $padding-step;
+}
+$padding-min: $padding-min-original ;
+
+@while $padding-min <= $padding-max {
+	.pb-#{$padding-min} ,
+	.padding-bottom-#{$padding-min} { padding-bottom: $padding-min#{$padding-unit}; } 
+	$padding-min: $padding-min + $padding-step;
+}
+$padding-min: $padding-min-original ;
+
+@while $padding-min <= $padding-max {
+	.pl-#{$padding-min} ,
+	.padding-left-#{$padding-min} { padding-left: $padding-min#{$padding-unit}; } 
+	$padding-min: $padding-min + $padding-step;
+}
+$padding-min: $padding-min-original ;
+
+@while $padding-min <= $padding-max {
+	.pr-#{$padding-min} ,
+	.padding-right-#{$padding-min} { padding-right: $padding-min#{$padding-unit}; } 
+	$padding-min: $padding-min + $padding-step;
+}
+$padding-min: $padding-min-original ;
+
+@while $padding-min <= $padding-max {
+	.pt-#{$padding-min} ,
+	.padding-top-#{$padding-min} { padding-top: $padding-min#{$padding-unit}; } 
+	$padding-min: $padding-min + $padding-step;
+}
+$padding-min: $padding-min-original ;
+
+@while $position-min <= $position-max {
+	.r-#{$position-min} ,
+	.right-#{$position-min} { right: $position-min#{$position-unit}; } 
+	$position-min: $position-min + $position-step;
+}
+$position-min: $position-min-original ;
+
+@while $position-min <= $position-max {
+	.t-#{$position-min} ,
+	.top-#{$position-min} { top: $position-min#{$position-unit}; } 
+	$position-min: $position-min + $position-step;
+}
+$position-min: $position-min-original ;
+
+@while $dimension-min <= $dimension-max {
+	.w-#{$dimension-min} ,
+	.width-#{$dimension-min} { width: $dimension-min#{$dimension-unit}; } 
+	$dimension-min: $dimension-min + $dimension-step;
+}
+$dimension-min: $dimension-min-original ;
+
+@while $z-index-min <= $z-index-max {
+	.zi-#{$z-index-min} ,
+	.z-index-#{$z-index-min} { z-index: $z-index-min#{$z-index-unit}; } 
+	$z-index-min: $z-index-min + $z-index-step;
+}
+$z-index-min: $z-index-min-original ;
