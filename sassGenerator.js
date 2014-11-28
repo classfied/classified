@@ -19,7 +19,7 @@ var classified = {
     this.generate();
   },
   generate: function() {
-    // var loopedProps = this.generateLoopedProps();
+    var loopedProps = this.generateLoopedProps();
     var props = this.generateProps();
     var loopedPropsData = "";
     var sassVars = "";
