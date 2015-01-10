@@ -1,5 +1,6 @@
 .sass-cache/*
 *.map
+*.swp
 
 # OS generated files #
 ######################
