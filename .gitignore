@@ -1,6 +1,8 @@
 .sass-cache/*
+src/.sass-cache/*
 *.map
-
+*.swp
+node_modules
 # OS generated files #
 ######################
 .DS_Store
