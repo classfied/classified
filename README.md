@@ -8,8 +8,9 @@ Ever wanted to write a quick prototype? Classified helps you finish prototypes q
  clone this repo and follow these steps.
  
  - enter to the project directory
+
  ```sh
-  $ cd classified
+  > $ cd classified
  ```
  - Install the dependencies
   ```sh
