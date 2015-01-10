@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     config: {
       srcPath:  "src",
       compilePath: "dist",
-      banner: "/*!\n * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n * Copyright 2011-<%= grunt.template.today(\"yyyy\") %> <%= pkg.author %>\n * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n */\n",
+      banner: "/*!\n * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n * Copyright 2015 <%= pkg.author.name %>\n * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n */\n",
     },
     // Task configuration.
     clean: {
@@ -99,7 +99,7 @@ module.exports = function (grunt) {
     usebanner: {
       options: {
         position: 'top',
-        banner: '<%= banner %>'
+        banner: '<%= config.banner %>'
       },
       files: {
         src: '<%= config.compilePath %>/*.css'
