@@ -3916,6 +3916,22 @@
 .width-200 {
   width: 200px;
 }
+.zi--10,
+.z-index--10 {
+  z-index: -10px;
+}
+.zi--5,
+.z-index--5 {
+  z-index: -5px;
+}
+.zi-0,
+.z-index-0 {
+  z-index: 0;
+}
+.zi-5,
+.z-index-5 {
+  z-index: 5px;
+}
 .zi-10,
 .z-index-10 {
   z-index: 10px;
