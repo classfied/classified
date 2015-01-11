@@ -31,8 +31,8 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     config: {
-      srcPath:  "src",
-      compilePath: "dist",
+      srcPath:  grunt.option( "src" ) || "src",
+      compilePath: grunt.option( "dist" ) || "dist",
       banner: "/*!\n * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n * Copyright 2015 <%= pkg.author.name %>\n * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n */\n",
     },
     // Task configuration.
@@ -147,5 +147,4 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['dist']);
-
 };
